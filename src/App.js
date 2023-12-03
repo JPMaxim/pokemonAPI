@@ -14,7 +14,7 @@ function App() {
   }
 
   const fetchPokemon = async (name) => {
-    let url = "https://pokeapi.co/api/v2/pokemon/" + name
+    let url = "https://pokeapi.co/api/v2/pokemon/" + name.toLowerCase()
     const response = await fetch(url)
     const data = await response.json()
     setPokemon(data)
@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Pokemon API Project</h1>
+        <h1 id="siteTitle">Pokemon API Project</h1>
         <Form 
           handleSubmit={handleSubmit}
           inputName={inputName}

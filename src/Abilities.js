@@ -1,7 +1,7 @@
 export const Abilities = (ability) => {
     return (
         <div>
-            <p>{ability.ability.ability.name}</p>
+            <div className="ability">{ability.ability.ability.name}</div>
         </div>
     )
 }

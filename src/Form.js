@@ -3,14 +3,15 @@ export const Form = ({handleSubmit, inputName, setInputName}) => {
         <div>
             <form onSubmit={handleSubmit}>
                 <label>
-                    Enter a pokemon name:
+                    <div id="inputLabel">ENTER A POKEMON NAME:</div>
                     <input
+                        id="textInput"
                         type="text"
                         value={inputName}
                         onChange={(e) => setInputName(e.target.value)}
                     />
                 </label>
-                <input type="submit"/>
+                <input id="inputSubmit" type="submit"/>
             </form>
         </div>
     )

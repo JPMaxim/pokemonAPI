@@ -1,16 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap');
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: 'Miltonian Tattoo', serif;
 }
 
 .App-header {
@@ -23,16 +17,137 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* #siteTitle {
+  margin: 0;
+} */
+.mainContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100vw;
+  max-width: 1200px;
+}
+.mainSubcontainer {
+  width:33%;
+}
+#sprite {
+  width: 125%;
+  overflow: hidden;
+}
+/* .pokemonStats {
+  background-color: #B3A125;
+  padding: 20px;
+  border-radius: 20px;
+} */
+.statContainer {
+  display:flex;
+  justify-content: center;
+  width: 80%;
+  max-width: 350px;
+  min-width: 200px;
+  margin: auto;
+}
+.stat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 10px 0;
+  padding: 5px;
+  border: solid 2px black;
+}
+#statType {
+  background-color: #FF0000;
+  border-radius: 20px 0 0 20px;
+  border-right: solid 2px black;
+}
+#statValue {
+  background-color: white;
+  border-radius: 0 20px 20px 0;
+  color: black;
+}
+.ability {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFDE00;
+  border-radius: 20px;
+  width: 60%;
+  max-width: 350px;
+  min-width: 150px;
+  margin: 15px auto;
+  padding: 5px;
+  border: solid 2px black;
+  color: black;
+}
+/* Form */
+label {
+  display: block;
+}
+#textInput {
+  min-width: 300px;
+  background-color: #282c34;
+  color: white;
+  height: 30px;
+  border: none;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 4px #565d6a, inset -4px -4px 4px #90959f;
+}
+#inputLabel {
+  font-size: 0.6em;
+  /* font-weight: bold; */
+  text-align: left;
+  margin-left: 10px;
+}
+#inputSubmit {
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  border: solid 2px #565d6a;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 768px) {
+  .mainContainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
   }
-  to {
-    transform: rotate(360deg);
+  .mainSubcontainer {
+    width:100%;
+  }
+  #sprite {
+    width: 100%;
+    overflow: hidden;
+  }
+  form {
+    width: 100vw;
+    margin: 0;
+  }
+  label {
+    width: 100%;
+  }
+  #textInput {
+    min-width: 80px;
+    width: 65%;
+    margin: 5px 0;
+  }
+  #inputLabel {
+    font-size: 0.6em;
+    text-align: center;
+  }
+  #inputSubmit {
+    background-color: #282c34;
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    border: solid 2px #565d6a;
+    font-weight: bold;
+    font-size: 0.7em;
   }
 }
