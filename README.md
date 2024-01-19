@@ -5,4 +5,4 @@ On submit, it sends a request using the input value in the endpoint, to receive 
 It displays the image, stats and abilities using React state.
 
 ## Additions
-Error message functionality to be added. Currently if a name is submitted that does not recieve a response from the api, simply nothing happens.
+Error message functionality to be added. Currently if a name is submitted that does not recieve a valid response from the api, simply nothing happens.
